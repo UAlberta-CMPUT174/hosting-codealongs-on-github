@@ -1,0 +1,22 @@
+<h1>Version 3</h1>
+
+<p>In this final version of the game, we'll want to implement a way for the program to determine if the game should end. 
+  The game has two possible end conditions:</p>
+<ul>
+  <li>a space on the bard has been visited a MAX_VISITS times (for testing purposes, let's say the max is 3)</li>
+  <li>all spaces on the board have been visited at least once</li>
+</ul>
+
+<p>Until the game ends, the program should keep updating and displaying the board, and prompting the user to roll the die.</p>
+
+<p>We'll have a few final UDFs to define:</p>
+<ul>
+  <li><code>is_game_over</code></li>
+    <ul><li>This function checks to see if one of the two possible end game conditions are true. If one of them is true, then the game should end; otherwise, the game should continue on.</li></ul>
+  <li><code>display_result</code></li>
+  <ul>
+    <li>This function displays a different message depending on how the game ended:</li>
+    <li>"Congratulations, you won." is displayed if all squares on the board has been visited at least once</li>
+    <li>"Unfortunately, you lost." is displayed if one of the squares on the board has been visited MAX_VISITS times</li>
+  </ul>
+</ul>

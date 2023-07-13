@@ -1,0 +1,23 @@
+<h1>Scenario:</h1>
+<p>In order to promote her bistro, Sookie would like to run a Jelly Bean Guessing Game for her customers. 
+  She informs the customer that the number of jelly beans could be anywhere in the range of 2000 to 5000.
+</p>
+<p>
+  Each customer gets 3 attempts to guess the number of jelly beans in the jar, and their result depends on when they guess correctly, if at all. The customer also receives a hint after each guess.
+  The rules of Sookie's game are:
+</p>
+<ul>
+  <li>If the customer gets it right on their first attempt, they receive a 50% off coupon that they can redeem at their next order.  </li>
+  <li>If they fail the first attempt, the customer is given the sum of all the digits of the number of jelly beans as a hint. </li>
+  <li>If the customer is able to guess correctly on the second attempt they get a 25% off coupon for their next order. </li>
+  <li>If they fail the second attempt, the customer is given the first and last digit of the number of jelly beans as the final hint. </li>
+  <li>If the customer is able to guess correctly on the third attempt they get a 10% off coupon for their next order.</li>
+</ul>
+<h1>Task:</h1>
+<p>Create a program that helps Sookie run her guessing game. Your program should:</p>
+<ul>
+  <li>Input a customer's guess</li>
+  <li>If the guess is correct, print out the discount the customer will receive on their next order</li>
+  <li>If the guess is incorrect, and not their third guess, print out the hint they should receive and continue receiving their next guess</li>
+  <li>If the guess is incorrect, and <strong>is</strong> their third guess, print out the discount the customer will receive on their next order</li>
+</ul>
