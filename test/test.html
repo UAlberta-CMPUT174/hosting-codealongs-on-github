@@ -1,0 +1,37 @@
+<document>
+<trustedEmbed src="https://ualberta-cmput174.github.io/hosting-codealongs-on-github/module3/q1.html">
+  <section></section>
+  <script>
+    {
+      let x = document.currentScript.parentNode
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", x.getAttribute("src"));
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let insertLoc = x.getElementsByTagName("section")[0];
+            insertLoc.insertAdjacentHTML("beforeend", xhr.response);
+        }
+      };
+      xhr.send()
+    }
+  </script>
+</trustedEmbed>
+
+<trustedEmbed src="https://ualberta-cmput174.github.io/hosting-codealongs-on-github/module2/q1.html">
+  <section></section>
+  <script>
+    {
+      let x = document.currentScript.parentNode
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", x.getAttribute("src"));
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let insertLoc = x.getElementsByTagName("section")[0];
+            insertLoc.insertAdjacentHTML("beforeend", xhr.response);
+        }
+      };
+      xhr.send()
+    }
+  </script>
+</trustedEmbed>
+</document>
