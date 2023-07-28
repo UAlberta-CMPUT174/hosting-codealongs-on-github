@@ -1,7 +1,7 @@
   <script>
     {
       console.log("Did I run");
-      let x = document.currentScript.parentNode
+      let x = document.currentScript.parentNode.parentNode.parentNode
       let xhr = new XMLHttpRequest();
       xhr.open("GET", "https://ualberta-cmput174.github.io/hosting-codealongs-on-github/module3/q1.html");
       xhr.onreadystatechange = function() {
