@@ -1,0 +1,13 @@
+  <script>
+    {
+      let x = document.currentScript.parentNode
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://ualberta-cmput174.github.io/hosting-codealongs-on-github/module3/q1.html");
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            x.insertAdjacentHTML("beforeend", xhr.response);
+        }
+      };
+      xhr.send()
+    }
+  </script>
